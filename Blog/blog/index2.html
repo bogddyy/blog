@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My HTML blog</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header-ul site-ului-->
+    <header>
+      <!-- Titlul blogului -->
+      <div class="logo">
+        <h1>Bogdan Blog</h1>
+        <img
+          src="http://pngimg.com/uploads/car_wheel/car_wheel_PNG23302.png"
+          alt="logo"
+        />
+      </div>
+      <input type="search" placeholder="Search blabla..." />
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#html-css-section">HTML/CSS</a></li>
+        <li>
+          <a
+            href="https://www.telacad.ro/cursuri/js1/?referral=razvan%20cirlugea"
+            >JavaScript</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.telacad.ro/cursuri/javascript-advanced-react/?referral=razvan%20cirlugea"
+            >React</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Continutul principal -->
+    <main>
+      <div class="main-content">
+        <h2>Bine ai venit!</h2>
+        <p class="welcome-p">
+          Pe acest blog veti vedea toate informatiile informatiile de web
+          development de care aveti nevoie.
+        </p>
+        <p class="welcome-p">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+          pariatur maxime itaque ab beatae reprehenderit minima quod accusamus
+          eos placeat harum, sit voluptatum fugiat aut dolor modi quia libero
+          ipsa, velit dolore. Exercitationem quam suscipit, repudiandae quaerat
+          perspiciatis voluptatem libero aliquid cum excepturi tempore? Modi
+          reiciendis recusandae incidunt autem quam?
+        </p>
+        <h2>Vezi videoclipul saptamanii:</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/ly36kn0ug4k?si=zEzYt2QnEv1M-Dto"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <!-- id-ul dat aici trebuie sa coincida cu cel dat la href-ul tag-ului "a" din nav. -->
+        <div id="html-css-section">
+          <h2>HTML/CSS</h2>
+          <p>Aici vedeti ultimele feature-uri din HTML si CSS!</p>
+        </div>
+        <h2>Ajuta-ne cu un feedback:</h2>
+        <form method="get">
+          <label for="name">Nume: </label>
+
+          <input type="text" id="name" name="name" required />
+          <br />
+
+          <label for="email">Mail: </label>
+          <input type="email" id="email" name="email" />
+          <br />
+
+          <label for="password">Password: </label>
+          <input type="password" id="password" name="password" />
+          <br />
+          <p>Ce te intereseaza pe site-ul nostru?</p>
+          <label for="html-css-multiple">HTML/CSS</label>
+          <input
+            type="checkbox"
+            id="html-css-multiple"
+            name="html-css"
+            value="selected"
+          />
+          <br />
+          <label for="js-multiple">JS</label>
+
+          <input type="checkbox" id="js-multiple" name="js" />
+          <br />
+          <label for="react-multiple">React</label>
+          <input type="checkbox" id="react-multiple" name="js" />
+          <br />
+
+          <p>Care este topicul tau preferat?</p>
+          <label for="html-css">HTML/CSS</label>
+          <input type="radio" id="html-css" name="favorite" value="html-css" />
+          <br />
+          <label for="js">JS</label>
+          <input type="radio" id="js" name="favorite" value="js" />
+          <br />
+          <label for="react">React</label>
+          <input type="radio" id="react" name="favorite" value="react" />
+          <br />
+
+          <input type="submit" value="Trimite feedback" /><br />
+        </form>
+      </div>
+    </main>
+
+    <!-- Footer-ul site-ului -->
+    <footer>
+      <p>&copy; Bogdan Ailenei</p>
+    </footer>
+  </body>
+</html>
